@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Siesa_Expenses.ViewModels"
+             xmlns:model="clr-namespace:Siesa_Expenses.Models"
+             x:Class="Siesa_Expenses.Views.CompanyPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar" Command="{Binding AddCompanyCommand}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <RefreshView x:DataType="local:CompanyViewModel" Command="{Binding LoadCompanyCommand}" IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+                <CollectionView ItemsSource="{Binding companyModels}" SelectionMode="None">
+                    <CollectionView.EmptyView>
+                        <StackLayout>
+                            <Label Text="No hay compañias registradas :(" HorizontalOptions="Center" FontAttributes="Italic" FontSize="Large"/>
+                        </StackLayout>
+                    </CollectionView.EmptyView>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout x:DataType="model:CompanyModel">
+                                <SwipeView>
+                                    <SwipeView.RightItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="Delete" BackgroundColor="Red" Command="{Binding Source={RelativeSource AncestorType={x:Type local:CompanyViewModel}}, Path=CompanyTappedDelete}" CommandParameter="{Binding .}"/>
+                                            <SwipeItem IsDestructive="True" Text="Edit" BackgroundColor="Green" Command="{Binding Source={RelativeSource AncestorType={x:Type local:CompanyViewModel}}, Path=CompanyTappedEdit}" CommandParameter="{Binding .}"/>
+                                        </SwipeItems>
+                                    </SwipeView.RightItems>
+                                    <Grid Padding="5">
+                                    <Frame CornerRadius="10" HasShadow="True" BackgroundColor="Gainsboro">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Grid.Column="1" Text="{Binding CompanyName}" FontAttributes="Bold"/>
+                                            <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                                                <Image Source="office.png" Grid.Column="3" WidthRequest="50" HeightRequest="30" VerticalOptions="End" BackgroundColor="AliceBlue">
+                                                    <Image.GestureRecognizers>
+                                                            <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding Source={RelativeSource AncestorType={x:Type local:CompanyViewModel}}, Path=GoCompanyTapped}" CommandParameter="{Binding .}"/>
+                                                    </Image.GestureRecognizers>
+                                                </Image>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Frame>
+                                </Grid>
+                                </SwipeView>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                    <CollectionView.Header>
+                        <StackLayout>
+                            <Label Text="Lista de compañias" FontSize="Large" TextColor="Gray" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </CollectionView.Header>
+                    <CollectionView.Footer>
+                        <StackLayout>
+                            <Label Text="Ingresa más..." FontSize="Large" TextColor="Gray" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </CollectionView.Footer>
+                </CollectionView>
+            </RefreshView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

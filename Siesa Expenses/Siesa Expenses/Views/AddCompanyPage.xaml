@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Siesa_Expenses.Views.AddCompanyPage"
+             xmlns:local="clr-namespace:Siesa_Expenses.ViewModels">
+    <ContentPage.BindingContext>
+        <local:AddCompanyViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Entry Placeholder="Ingresa el nombre de la compañia" Text="{Binding companyModel.CompanyName}" TextColor="Black"/>
+            <Button Text="Guardar" HorizontalOptions="Center" Command="{Binding SaveCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
