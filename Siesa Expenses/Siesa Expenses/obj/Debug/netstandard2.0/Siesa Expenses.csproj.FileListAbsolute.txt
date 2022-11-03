@@ -21,3 +21,27 @@ C:\Users\IS\source\repos\Siesa Expenses Xamarin\Siesa Expenses\Siesa Expenses\ob
 C:\Users\IS\source\repos\Siesa Expenses Xamarin\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.pdb
 C:\Users\IS\source\repos\Siesa Expenses Xamarin\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\ref\Siesa Expenses.dll
 C:\Users\IS\source\repos\Siesa Expenses Xamarin\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\CompanyWebView.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\bin\Debug\netstandard2.0\Siesa Expenses.deps.json
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\bin\Debug\netstandard2.0\Siesa Expenses.dll
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\bin\Debug\netstandard2.0\Siesa Expenses.pdb
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.csproj.AssemblyReference.cache
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\AddCompanyPage.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\CompanyPage.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\CompanyWebView.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.AssemblyInfoInputs.cache
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.AssemblyInfo.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.csproj.CoreCompileInputs.cache
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.dll
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\refint\Siesa Expenses.dll
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.pdb
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\ref\Siesa Expenses.dll
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\CompanyPredeterminada.xaml.g.cs

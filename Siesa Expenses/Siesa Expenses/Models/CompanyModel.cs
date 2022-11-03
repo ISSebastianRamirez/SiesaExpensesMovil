@@ -10,6 +10,5 @@ namespace Siesa_Expenses.Models
         [PrimaryKey,AutoIncrement]
         public int CompanyId { get; set; }
         public string CompanyName { get; set; }
-
     }
 }

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Siesa_Expenses.ViewModels"
+             xmlns:model="clr-namespace:Siesa_Expenses.Models"
+             x:Class="Siesa_Expenses.Views.CompanyPredeterminada"
+             Shell.NavBarIsVisible="True">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator Color="Blue"
+                               x:Name="Charging"
+                               BackgroundColor="Transparent"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Scale="2"
+                               IsVisible="false"
+                               Margin="50">
+            </ActivityIndicator>
+                <WebView x:Name="webView" WidthRequest="1000" HeightRequest="1000" BackgroundColor="Transparent" Navigated="webView_Navigated" Navigating="webView_Navigating"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

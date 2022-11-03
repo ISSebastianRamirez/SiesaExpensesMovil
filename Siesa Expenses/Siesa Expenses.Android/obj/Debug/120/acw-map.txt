@@ -1,6 +1,9 @@
 Siesa_Expenses.Droid.MainActivity, Siesa Expenses.Android;crc64e1bb257ffdf6b2b5.MainActivity
 Siesa_Expenses.Droid.MainActivity;crc64e1bb257ffdf6b2b5.MainActivity
 siesa_expenses.droid.MainActivity;crc64e1bb257ffdf6b2b5.MainActivity
+Siesa_Expenses.Droid.SplashScreen, Siesa Expenses.Android;crc64e1bb257ffdf6b2b5.SplashScreen
+Siesa_Expenses.Droid.SplashScreen;crc64e1bb257ffdf6b2b5.SplashScreen
+siesa_expenses.droid.SplashScreen;crc64e1bb257ffdf6b2b5.SplashScreen
 AndroidX.Activity.IOnBackPressedDispatcherOwner, Xamarin.AndroidX.Activity;androidx.activity.OnBackPressedDispatcherOwner
 AndroidX.Activity.IOnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner
 androidx.activity.OnBackPressedDispatcherOwner;androidx.activity.OnBackPressedDispatcherOwner
