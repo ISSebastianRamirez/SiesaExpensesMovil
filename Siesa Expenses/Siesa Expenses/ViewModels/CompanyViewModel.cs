@@ -1,5 +1,6 @@
 ﻿using Siesa_Expenses.Models;
 using Siesa_Expenses.Views;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,6 +12,8 @@ namespace Siesa_Expenses.ViewModels
 {
     public class CompanyViewModel : BaseCompanyViewModel
     {
+        
+        PredeterminadaModel _predeterminadaModel;
         public Command LoadCompanyCommand { get; }
         public ObservableCollection<CompanyModel> companyModels { get; }
         public Command AddCompanyCommand { get; }

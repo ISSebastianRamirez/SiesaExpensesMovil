@@ -28,7 +28,6 @@ C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\De
 C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
-C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\AddCompanyPage.xaml.g.cs
 C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\CompanyPage.xaml.g.cs
 C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\CompanyWebView.xaml.g.cs
@@ -45,3 +44,4 @@ C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\De
 C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Siesa Expenses.pdb
 C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\ref\Siesa Expenses.dll
 C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\CompanyPredeterminada.xaml.g.cs
+C:\Users\IS\source\repos\SiesaExpensesMovil\Siesa Expenses\Siesa Expenses\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs

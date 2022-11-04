@@ -2,14 +2,47 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Siesa_Expenses.Views.AddCompanyPage"
-             xmlns:local="clr-namespace:Siesa_Expenses.ViewModels">
+             xmlns:local="clr-namespace:Siesa_Expenses.ViewModels"
+             Shell.NavBarIsVisible="False">
     <ContentPage.BindingContext>
         <local:AddCompanyViewModel/>
     </ContentPage.BindingContext>
-    <ContentPage.Content>
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-            <Entry Placeholder="Ingresa el nombre de la compañia" Text="{Binding companyModel.CompanyName}" TextColor="Black"/>
-            <Button Text="Guardar" HorizontalOptions="Center" Command="{Binding SaveCommand}"/>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <StackLayout>
+            <Image Source="~/Resources/Images/fondo"
+               Aspect="AspectFill" Margin="0"/>
         </StackLayout>
-    </ContentPage.Content>
+        <Grid RowSpacing="5" Grid.Row="0" Margin="30,130,20,100" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="Ingresa tu compañia" TextColor="Black" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalOptions="StartAndExpand"/>
+            <StackLayout Grid.Row="2" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                <Frame BackgroundColor="WhiteSmoke" BorderColor="Black"  Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="0">
+                            <Image Source="~/Resources/office" Aspect="AspectFill" Margin="0" WidthRequest="40" HeightRequest="40"/>
+                        </Frame>
+                        <Entry Placeholder="Ingresa el nombre de la compañia" Text="{Binding companyModel.CompanyName}" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout Grid.Row="6">
+                <Button Text="Guardar" BackgroundColor="Blue" TextColor="White" FontAttributes="Bold" CornerRadius="30" WidthRequest="200" Margin="0,15,0,0" Command="{Binding SaveCommand}"/>
+            </StackLayout>
+        </Grid>
+    </Grid>
 </ContentPage>

@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using AndroidX.AppCompat.App;
 
 namespace Siesa_Expenses.Droid
 {
@@ -12,8 +13,8 @@ namespace Siesa_Expenses.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            AppCompatDelegate.DefaultNightMode = AppCompatDelegate.ModeNightNo;
             base.OnCreate(savedInstanceState);
-
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

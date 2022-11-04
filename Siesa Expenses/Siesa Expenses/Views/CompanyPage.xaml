@@ -3,17 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Siesa_Expenses.ViewModels"
              xmlns:model="clr-namespace:Siesa_Expenses.Models"
-             x:Class="Siesa_Expenses.Views.CompanyPage">
+             x:Class="Siesa_Expenses.Views.CompanyPage"
+             BackgroundImageSource="~/Resources/fondo">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Agregar" Command="{Binding AddCompanyCommand}"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <RefreshView x:DataType="local:CompanyViewModel" Command="{Binding LoadCompanyCommand}" IsRefreshing="{Binding IsBusy, Mode=OneWay}">
-                <CollectionView ItemsSource="{Binding companyModels}" SelectionMode="None">
+                <CollectionView ItemsSource="{Binding companyModels}" SelectionMode="None" BackgroundColor="Transparent">
                     <CollectionView.EmptyView>
                         <StackLayout>
-                            <Label Text="No hay compañias registradas :(" HorizontalOptions="Center" FontAttributes="Italic" FontSize="Large"/>
+                            <Label Text="No hay compañias registradas :(" HorizontalOptions="Center" FontAttributes="Italic" FontSize="Large" TextColor="Black"/>
                         </StackLayout>
                     </CollectionView.EmptyView>
                     <CollectionView.ItemTemplate>
@@ -26,27 +27,29 @@
                                             <SwipeItem IsDestructive="True" Text="Edit" BackgroundColor="Green" Command="{Binding Source={RelativeSource AncestorType={x:Type local:CompanyViewModel}}, Path=CompanyTappedEdit}" CommandParameter="{Binding .}"/>
                                         </SwipeItems>
                                     </SwipeView.RightItems>
-                                    <Grid Padding="5">
-                                    <Frame CornerRadius="10" HasShadow="True" BackgroundColor="Gainsboro">
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Grid.Column="1" Text="{Binding CompanyName}" FontAttributes="Bold"/>
-                                            <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand">
-                                                <Image Source="office.png" Grid.Column="3" WidthRequest="50" HeightRequest="30" VerticalOptions="End" BackgroundColor="AliceBlue">
-                                                    <Image.GestureRecognizers>
-                                                            <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding Source={RelativeSource AncestorType={x:Type local:CompanyViewModel}}, Path=GoCompanyTapped}" CommandParameter="{Binding .}"/>
-                                                    </Image.GestureRecognizers>
-                                                </Image>
+                                    <Grid Padding="6" BackgroundColor="Transparent">
+                                        <Frame CornerRadius="20" HasShadow="True" BackgroundColor="Gainsboro">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Grid.Column="1" Text="{Binding CompanyName}" FontAttributes="Bold"/>
+                                                <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                                                    <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="0" BackgroundColor="Transparent">
+                                                        <Image Source="office.png"  Aspect="AspectFill" Margin="0" WidthRequest="40" HeightRequest="40">
+                                                            <Image.GestureRecognizers>
+                                                                <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding Source={RelativeSource AncestorType={x:Type local:CompanyViewModel}}, Path=GoCompanyTapped}" CommandParameter="{Binding .}"/>
+                                                            </Image.GestureRecognizers>
+                                                        </Image>
+                                                    </Frame>
+                                                </StackLayout>
                                             </StackLayout>
-                                        </StackLayout>
-                                    </Frame>
-                                </Grid>
+                                        </Frame>
+                                    </Grid>
                                 </SwipeView>
                             </StackLayout>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                     <CollectionView.Header>
                         <StackLayout>
-                            <Label Text="Lista de compañias" FontSize="Large" TextColor="Gray" HorizontalOptions="Center"/>
+                            <Label Text="Lista de compañias" FontSize="Large" TextColor="Black" HorizontalOptions="Start" FontFamily=""/>
                         </StackLayout>
                     </CollectionView.Header>
                     <CollectionView.Footer>
